@@ -60,7 +60,29 @@ class _LoginScreenState extends State<LoginScreen> {
             child: textfield(),
           ),
           ),
-          
+          Container(
+          decoration: BoxDecoration(
+            color: Color.fromARGB(255, 56, 52, 52),
+            borderRadius: BorderRadius.all(Radius.circular(5))
+          ),
+          height: 35,
+          width: 250,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            // ignore: prefer_const_literals_to_create_immutables
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child:  Text("Sign in",
+              style: TextStyle(
+                fontSize: 12,
+              ),
+              ),
+              ),
+             
+            ],
+          ),
+        ),
         ],
       ),
     );
