@@ -88,14 +88,14 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           //business,pro,free
-          ListView(
+          /* ListView(
             scrollDirection: Axis.horizontal,
             children: [
               menu(),
               menu(),
               menu(),
             ],
-          )
+          ) */
           
         ],
       ),
