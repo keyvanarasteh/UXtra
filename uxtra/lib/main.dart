@@ -1,5 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
-import 'package:uxtra/screens/main_screen.dart';
+import 'package:uxtra/screens/home_screen.dart';
+import 'package:uxtra/screens/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,10 +18,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-        primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
       ),
-      home: const MainScreen(),
+      home: const LoginScreen(),
     );
   }
 }
