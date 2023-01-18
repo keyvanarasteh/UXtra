@@ -28,10 +28,18 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Icon(Icons.ac_unit_sharp),
           ),
           //platform login button
-          sign_in(),
-          sign_in(),
-          sign_in(),
-          sign_in(),
+          sign_in(
+            platform_name: "Sign in with Google",
+          ),
+          sign_in(
+            platform_name: "Sign in with Twitter",
+          ),
+          sign_in(
+            platform_name: "Sign in with LinkedIn",
+          ),
+          sign_in(
+            platform_name: "Sign in with Facebook",
+          ),
           //çizgi
           Divider(),
           //mail
@@ -44,7 +52,10 @@ class _LoginScreenState extends State<LoginScreen> {
           width: 250,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: textfield(),
+            child: textfield(
+              title_name: "Email Address",
+              mailorpassword: "Your email address",
+            ),
           ),
           ),
           //password
@@ -57,7 +68,10 @@ class _LoginScreenState extends State<LoginScreen> {
           width: 250,
           child: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: textfield(),
+            child: textfield(
+              title_name: "Password",
+              mailorpassword: "Your password",
+            ),
           ),
           ),
           //sign in button

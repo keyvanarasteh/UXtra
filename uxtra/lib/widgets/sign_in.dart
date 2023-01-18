@@ -3,8 +3,11 @@
 import 'package:flutter/material.dart';
 
 class sign_in extends StatelessWidget {
+  final String platform_name;
+
   const sign_in({
     Key? key,
+    required this.platform_name,
   }) : super(key: key);
 
   @override
@@ -17,9 +20,8 @@ class sign_in extends StatelessWidget {
         },
         child: Container(
           decoration: BoxDecoration(
-            color: Color.fromARGB(255, 56, 52, 52),
-            borderRadius: BorderRadius.all(Radius.circular(5))
-          ),
+              color: Color.fromARGB(255, 56, 52, 52),
+              borderRadius: BorderRadius.all(Radius.circular(5))),
           height: 35,
           width: 250,
           child: Row(
@@ -28,14 +30,16 @@ class sign_in extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
-                child: Icon(Icons.search,
-                size: 15,
+                child: Icon(
+                  Icons.search,
+                  size: 15,
                 ),
               ),
-              Text("Sign in with Google",
-              style: TextStyle(
-                fontSize: 12,
-              ),
+              Text(
+                platform_name,
+                style: TextStyle(
+                  fontSize: 12,
+                ),
               ),
             ],
           ),
