@@ -25,7 +25,12 @@ class _LoginScreenState extends State<LoginScreen> {
           appbar(),
           Padding(
             padding: const EdgeInsets.only(top: 20.0),
-            child: Icon(Icons.ac_unit_sharp),
+            child: InkWell(
+              onTap: () {
+                Navigator.of(context).pushNamed('/home');
+              },
+              child: Icon(Icons.ac_unit_sharp),
+              ),
           ),
           //login to superword title
           Padding(
