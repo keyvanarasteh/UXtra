@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class textfield extends StatelessWidget {
@@ -14,7 +16,11 @@ class textfield extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(title_name),
+        Text(title_name,
+        style: TextStyle(
+          fontSize: 13,
+        ),
+        ),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: TextField(
@@ -34,7 +40,6 @@ class textfield extends StatelessWidget {
           ),
         )
       ]
-    
     );
   }
 }

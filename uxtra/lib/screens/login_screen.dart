@@ -24,9 +24,28 @@ class _LoginScreenState extends State<LoginScreen> {
         children: [
           appbar(),
           Padding(
-            padding: const EdgeInsets.all(30.0),
+            padding: const EdgeInsets.only(top: 20.0),
             child: Icon(Icons.ac_unit_sharp),
           ),
+          //login to superword title
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text("Login to superword",
+              style: TextStyle(
+                fontSize: 20,
+              ),
+            ),
+          ),
+          //try for free text
+           Padding(
+             padding: const EdgeInsets.only(bottom: 20.0),
+             child: Text("Try for free",
+               style: TextStyle(
+                 fontSize: 12,
+                 color: Colors.grey,
+               ),
+             ),
+           ),
           //platform login button
           sign_in(
             platform_name: "Sign in with Google",
@@ -41,22 +60,25 @@ class _LoginScreenState extends State<LoginScreen> {
             platform_name: "Sign in with Facebook",
           ),
           //çizgi
-          Divider(),
+          /* Divider(), */
           //mail
-          Container(
-           decoration: BoxDecoration(
-            color: Colors.transparent,
-            borderRadius: BorderRadius.all(Radius.circular(5))
-          ),
-          height: 100,
-          width: 250,
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: textfield(
-              title_name: "Email Address",
-              mailorpassword: "Your email address",
+          Padding(
+            padding: const EdgeInsets.only(top: 8.0),
+            child: Container(
+             decoration: BoxDecoration(
+              color: Colors.transparent,
+              borderRadius: BorderRadius.all(Radius.circular(5))
             ),
-          ),
+            height: 100,
+            width: 250,
+            child: Padding(
+              padding: const EdgeInsets.all(2.0),
+              child: textfield(
+                title_name: "Email Address",
+                mailorpassword: "Your email address",
+              ),
+            ),
+            ),
           ),
           //password
           Container(
@@ -67,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
           height: 100,
           width: 250,
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(2.0),
             child: textfield(
               title_name: "Password",
               mailorpassword: "Your password",
@@ -98,6 +120,50 @@ class _LoginScreenState extends State<LoginScreen> {
             ],
           ),
         ),
+        Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Send a magic link email",
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 11,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text("Fagot your password?",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 11,
+                  ),),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Don't have an account?",
+                  style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 11,
+                  ),),
+                  InkWell(
+                    onTap: () {
+                      print("tıklandı");
+                    },
+                    child: Text("Sign up",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 11,
+                    ),),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        )
         ],
       ),
     );

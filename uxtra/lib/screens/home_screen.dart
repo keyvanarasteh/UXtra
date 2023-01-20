@@ -115,6 +115,7 @@ class HomeScreen extends StatelessWidget {
               scrollDirection: Axis.vertical,
               children: [
                 menu(),
+                menu(),
                 
               ],
             ),
