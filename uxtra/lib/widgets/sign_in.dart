@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 
 class sign_in extends StatelessWidget {
   final String platform_name;
+  //final Image;
 
   const sign_in({
     Key? key,
     required this.platform_name,
+    //required this.Image,
   }) : super(key: key);
 
   @override
@@ -30,10 +32,8 @@ class sign_in extends StatelessWidget {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
-                child: Icon(
-                  Icons.search,
-                  size: 15,
-                ),
+                child: Icon(Icons.search),
+                //Image,
               ),
               Text(
                 platform_name,

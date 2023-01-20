@@ -8,14 +8,14 @@ import 'package:uxtra/widgets/appbar.dart';
 import '../widgets/sign_in.dart';
 import '../widgets/text_field.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class CreateAccount extends StatefulWidget {
+  const CreateAccount({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<CreateAccount> createState() => _CreateAccountState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _CreateAccountState extends State<CreateAccount> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _LoginScreenState extends State<LoginScreen> {
           //login to superword title
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Text("Login to superword",
+            child: Text("Create an account",
               style: TextStyle(
                 fontSize: 20,
               ),
@@ -49,19 +49,19 @@ class _LoginScreenState extends State<LoginScreen> {
           //platform login button
           sign_in(
             platform_name: "Sign in with Google",
-            //Image: Image.asset("/assets/images/google.png"),
+            //Image: Image.asset("/assets/images/google.png",),
           ),
           sign_in(
             platform_name: "Sign in with Twitter",
-            //Image: Image.asset("/assets/images/google.png"),
+            //Image: Image.asset("/assets/images/twitter.png"),
           ),
           sign_in(
             platform_name: "Sign in with LinkedIn",
-            //Image: Image.asset("/assets/images/google.png"),
+            //Image: Image.asset("/assets/images/linkedin.png"),
           ),
           sign_in(
             platform_name: "Sign in with Facebook",
-            //Image: Image.asset("/assets/images/google.png"),
+            //Image: Image.asset("/assets/images/facebook.png"),
           ),
           //çizgi
           /* Divider(), */
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(right: 8.0),
-                child:  Text("Sign in",
+                child:  Text("Get Started",
               style: TextStyle(
                 fontSize: 12,
               ),
@@ -128,37 +128,20 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Text("Send a magic link email",
-                style: TextStyle(
-                  color: Colors.grey,
-                  fontSize: 11,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text("Fagot your password?",
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 11,
-                  ),),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Don't have an account?",
+                  Text("Already have an account?",
                   style: TextStyle(
                     color: Colors.grey,
                     fontSize: 11,
                   ),),
                   InkWell(
                     onTap: () {
-                      Navigator.of(context).pushNamed('/createaccount');
+                      Navigator.of(context).pushNamed('/login');
                       print("tıklandı");
                     },
-                    child: Text("Sign up",
+                    child: Text("Sign in",
                     style: TextStyle(
                       color: Colors.grey,
                       fontSize: 11,

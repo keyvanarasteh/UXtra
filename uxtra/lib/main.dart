@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:uxtra/screens/create_account_screen.dart';
 import 'package:uxtra/screens/home_screen.dart';
 import 'package:uxtra/screens/login_screen.dart';
 
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/login' :(context) => LoginScreen(),
         '/home' :(context) => HomeScreen(),
+        '/createaccount' :(context) => CreateAccount(),
       },
       theme: ThemeData(
         brightness: Brightness.dark,
