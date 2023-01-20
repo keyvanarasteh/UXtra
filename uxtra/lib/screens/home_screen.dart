@@ -114,8 +114,22 @@ class HomeScreen extends StatelessWidget {
 
               scrollDirection: Axis.vertical,
               children: [
-                menu(),
-                menu(),
+                menu(
+                  first_title: "Unlock Your Writing Potential with AI",
+                  text_message: 
+                  '''Use the Power of AI to Enhance Your Writing Every Day and Unlock Your Creativity and Imagination''',
+                ),
+                menu(
+                  first_title: "Adapt Texts to Any Situation Quickly and Easily",
+                  text_message: 
+                  '''Instantly Change the Tone of Your Writing to Suit Any Situation or Occasion''',
+                ),
+                menu(
+                  first_title: "Correct, Summarize & Expand any text with a click",
+                  text_message: 
+                  '''Quickly edit text to get the perfect length and clarity, saving time and ensuring accuracy.''',
+                ),
+
                 
               ],
             ),

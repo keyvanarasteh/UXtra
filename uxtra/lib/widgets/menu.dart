@@ -3,8 +3,14 @@
 import 'package:flutter/material.dart';
 
 class menu extends StatelessWidget {
+  final String first_title;
+  final String text_message;
+  final dynamic add_gif;
   const menu({
     Key? key,
+    required this.first_title,
+    required this.text_message,
+    this.add_gif,
   }) : super(key: key);
 
   @override
@@ -12,7 +18,7 @@ class menu extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 15.0, left: 8, right: 8, bottom: 8),
       child: Container(
-        height: 170,
+        height: 300,
         width: double.infinity,
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 44, 42, 42),
@@ -22,53 +28,34 @@ class menu extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 20.0, top: 15, bottom: 20),
-              child: Text("Business",
+              child: Text(first_title,
               textAlign: TextAlign.left,
               style: TextStyle(
-                fontSize: 17,
+                fontSize: 20,
               ),
               ),
               
             ),
             Padding(
               padding: const EdgeInsets.only(left: 20.0, bottom: 20),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text("\$19",
-                  style: TextStyle(
-                    fontSize: 40,
-                  ),
-                  ),
-                  Text("/month",
-                  style: TextStyle(
-                    fontSize: 12,
-                  ),
-                  ),
-                ],
+              child: Text(text_message,
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: 12,
+              ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20, right: 20),
-              child: InkWell(
-                onTap: () {
-                  print("tıklandı");
-                },
-                child: Container(
-                  height: 30,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: Colors.white38
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text("Subscribe",
-                    textAlign: TextAlign.center,
-                      style: TextStyle(
-                        fontSize: 12,
-                      ),
-                    ),
-                  ),
+              padding: const EdgeInsets.all(8),
+              child: Container(
+                height: 150,
+                width: 250,
+                decoration: BoxDecoration(
+                  color: Colors.white38
+                ),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: add_gif,
                 ),
               ),
             ),
