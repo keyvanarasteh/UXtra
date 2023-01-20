@@ -1,0 +1,68 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "responsive_app",
+            "cwd": "responsive_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "responsive_app (profile mode)",
+            "cwd": "responsive_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "responsive_app (release mode)",
+            "cwd": "responsive_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "uxtra",
+            "cwd": "uxtra",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "uxtra (profile mode)",
+            "cwd": "uxtra",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "uxtra (release mode)",
+            "cwd": "uxtra",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "zd_app",
+            "cwd": "zd_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "zd_app (profile mode)",
+            "cwd": "zd_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "zd_app (release mode)",
+            "cwd": "zd_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

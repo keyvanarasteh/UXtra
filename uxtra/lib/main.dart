@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: const LoginScreen(),
+      home: const HomeScreen(),
     );
   }
 }
