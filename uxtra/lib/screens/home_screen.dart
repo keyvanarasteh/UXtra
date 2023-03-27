@@ -4,6 +4,7 @@ import 'dart:html';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:uxtra/screens/ekran.dart';
 
 import '../widgets/appbar.dart';
 import '../widgets/menu.dart';
